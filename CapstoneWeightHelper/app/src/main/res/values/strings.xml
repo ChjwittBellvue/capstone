@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Capstone Weight Helper</string>
+
+    <!-- headers -->
+    <string name="summary">Summary</string>
+    <string name="weight_entry">Weight Entry</string>
+    <string name="weight_history">Weight History</string>
+    <string name="settings">Settings</string>
+
+    <!-- Summary -->
+    <string name="greeting">Hello, User!</string>
+    <string name="hello_user_default">Hello, User!</string>
+    <string name="add_a_weight_entry">Add a Weight Entry</string>
+    <string name="weight_entry_history">Weight Entry History</string>
+    <string name="delete_entry">"Delete Entry"</string>
+
+    <!-- fonts -->
+    <string name="page_header_font">sans-serif</string>
+
+    <!-- Misc -->
+    <string name="back_arrow">Back Arrow</string>
+    <string name="number_default">0</string>
+    <string name="take_a_progress_picture">Take a Progress Picture</string>
+    <string name="current_weight">Current Weight</string>
+    <string name="goal_weight">Goal Weight</string>
+    <string name="goal_date">Goal Date</string>
+    <string name="bmi">BMI</string>
+    <string name="save">Save</string>
+    <string name="cancel">Cancel</string>
+    <string name="avg_wkly_weight_change">Avg Wkly Weight Change</string>
+    <string name="inches">Inches</string>
+    <string name="feet">Feet</string>
+    <string name="height">Height</string>
+    <string name="gender">Gender</string>
+    <string name="username">Username</string>
+    <string name="current_date">Current Date</string>
+    <string name="delete_picture">Delete Picture</string>
+    <string name="entry_weight">Entry Weight</string>
+    <string name="entry_date">Entry Date</string>
+    <string name="no">No</string>
+    <string name="yes">Yes</string>
+    <string name="do_you_really_want_to_delete_this_record">Do you really want to delete this record?</string>
+    <string name="login">Login</string>
+    <string name="password">Password</string>
+    <string name="create_a_new_user">Create a New User</string>
+    <string name="setup">Setup</string>
+    <string name="mm_dd_yyyy">MM/dd/yyyy</string>
+    <string name="display_name">Display Name</string>
+    <string name="login_instructions">Note: test users are testuser1 and testuser2, each with a password of \'password\' or you can create a new user</string>
+    <string name="name">Name</string>
+    <string name="editbutton">EditButton</string>
+    <string name="entrypicture">EntryPicture</string>
+    <string name="history_weight">history_weight</string>
+
+
+</resources>

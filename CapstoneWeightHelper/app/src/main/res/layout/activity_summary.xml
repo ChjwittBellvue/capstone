@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+References
+
+Black, D. (2016, December 28). Android Bordered Button. Retrieved April 8, 2025, from https://medium.com/@dblackker/android-bordered-button-3d3016848b8a
+
+-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- header -->
+
+    <TextView
+        android:id="@+id/goal_weight_label"
+        android:layout_width="109dp"
+        android:layout_height="24dp"
+        android:fontFamily="@string/page_header_font"
+        android:text="@string/goal_weight"
+        android:textColor="@color/summary_metric_color"
+        android:textSize="15sp"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.427" />
+
+    <TextView
+        android:id="@+id/goal_date_label"
+        android:layout_width="109dp"
+        android:layout_height="24dp"
+        android:fontFamily="@string/page_header_font"
+        android:gravity="center"
+        android:text="@string/goal_date"
+        android:textColor="@color/summary_metric_color"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.824"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.427" />
+
+    <TextView
+        android:id="@+id/bmi_label"
+        android:layout_width="109dp"
+        android:layout_height="24dp"
+        android:fontFamily="@string/page_header_font"
+        android:gravity="center"
+        android:text="@string/bmi"
+        android:textColor="@color/summary_metric_color"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.162"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.555" />
+
+    <TextView
+        android:id="@+id/avg_weekly_weight_change_label"
+        android:layout_width="107dp"
+        android:layout_height="38dp"
+        android:fontFamily="@string/page_header_font"
+        android:gravity="center"
+        android:text="@string/avg_wkly_weight_change"
+        android:textColor="@color/summary_metric_color"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.565" />
+
+    <TextView
+        android:id="@+id/current_weight_label"
+        android:layout_width="140dp"
+        android:layout_height="32dp"
+        android:fontFamily="@string/page_header_font"
+        android:text="@string/current_weight"
+        android:textSize="20sp"
+        android:textColor="@color/summary_metric_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.298" />
+
+    <Button
+        android:id="@+id/summary_progress_picture_nav"
+        android:layout_width="354dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/background_color"
+        android:text="@string/take_a_progress_picture"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.853"
+        app:strokeColor="@color/summary_button_color"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/settings_nav"
+        android:layout_width="354dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/background_color"
+        android:text="@string/settings"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.956"
+        app:strokeColor="@color/summary_button_color"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/summary_logout"
+        android:layout_width="97dp"
+        android:layout_height="43dp"
+        android:backgroundTint="@color/background_color"
+        android:text="Logout"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.033"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041"
+        app:strokeColor="@color/summary_button_color"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/weight_history_nav"
+        android:layout_width="354dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/background_color"
+        android:text="@string/weight_entry_history"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.751"
+        app:strokeColor="@color/summary_button_color"
+        app:strokeWidth="2dp" />
+
+    <TextView
+        android:id="@+id/current_weight"
+        android:layout_width="194dp"
+        android:layout_height="77dp"
+        android:background="@drawable/metric_border"
+        android:fontFamily="@string/page_header_font"
+        android:gravity="center"
+        android:text="@string/number_default"
+        android:textColor="@color/summary_metric_color"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.198" />
+
+    <TextView
+        android:id="@+id/avg_weekly_weight_change"
+        android:layout_width="156sp"
+        android:layout_height="56sp"
+        android:background="@drawable/metric_border"
+        android:fontFamily="@string/page_header_font"
+        android:gravity="center"
+        android:text="@string/number_default"
+        android:textColor="@color/summary_metric_color"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/bmi"
+        android:layout_width="156sp"
+        android:layout_height="56sp"
+        android:background="@drawable/metric_border"
+        android:fontFamily="@string/page_header_font"
+        android:gravity="center"
+        android:text="@string/number_default"
+        android:textColor="@color/summary_metric_color"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
+
+    <TextView
+        android:id="@+id/goal_weight"
+        android:layout_width="156sp"
+        android:layout_height="56sp"
+        android:background="@drawable/metric_border"
+        android:fontFamily="@string/page_header_font"
+        android:gravity="center"
+        android:text="@string/number_default"
+        android:textColor="@color/summary_metric_color"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.109"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.364" />
+
+    <TextView
+        android:id="@+id/goal_date"
+        android:layout_width="156sp"
+        android:layout_height="56sp"
+        android:background="@drawable/metric_border"
+        android:fontFamily="@string/page_header_font"
+        android:gravity="center"
+        android:text="@string/number_default"
+        android:textColor="@color/summary_metric_color"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.886"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.365" />
+
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@string/page_header_font"
+        android:text="@string/hello_user_default"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.117" />
+
+    <TextView
+        android:id="@+id/page_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@string/page_header_font"
+        android:text="@string/summary"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.042" />
+
+    <Button
+        android:id="@+id/weight_entry_nav"
+        android:layout_width="354dp"
+        android:layout_height="68dp"
+        android:backgroundTint="@color/background_color"
+        android:text="@string/add_a_weight_entry"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.648"
+        app:strokeColor="@color/summary_button_color"
+        app:strokeWidth="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

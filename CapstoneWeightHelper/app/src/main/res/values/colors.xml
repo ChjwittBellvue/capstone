@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="background_color">#FFFFFFFF</color>
+    <color name="summary_metric_color">#2234A8</color>
+    <color name="summary_button_color">#2234A8</color>
+    <color name="cancel_button_color">#7d1211</color>
+    <color name="save_button_color">#375d45</color>
+    <color name="remove_picture_button_color">#280137</color>
+    <color name="edit_entry_button_color">#02ccfe</color>
+    <color name="error_text">#FF0000</color>
+</resources>

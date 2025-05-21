@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+<!--    List frame-->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:layout_marginTop="10sp"
+        android:orientation="vertical">
+<!--Date-->
+        <TextView
+            android:id="@+id/history_date"
+            android:layout_width="200sp"
+            android:layout_height="74sp"
+            android:layout_marginTop="5sp"
+            android:layout_gravity="start"
+            android:textSize="25sp"
+            android:padding="0sp"
+            android:textColor="@color/black" />
+<!--Weight-->
+        <TextView
+            android:id="@+id/history_weight"
+            android:layout_width="200sp"
+            android:layout_height="70sp"
+            android:layout_marginTop="75sp"
+            android:contentDescription="@string/history_weight"
+            android:textSize="25sp"
+            android:padding="0sp"
+            android:textColor="@color/black" />
+<!--Picture-->
+        <ImageView
+            android:id="@+id/history_picture"
+            android:layout_width="140sp"
+            android:layout_height="140sp"
+            android:layout_marginStart="205sp"
+            android:layout_marginTop="5sp"
+            android:contentDescription="@string/entrypicture"
+            android:padding="5sp"
+            android:textColor="@color/black" />
+<!--Edit button-->
+        <ImageButton
+            android:id="@+id/edit_record"
+            android:layout_width="60sp"
+            android:layout_height="135dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="5sp"
+            android:contentDescription="@string/editbutton"
+            android:padding="0sp"
+            android:src="@drawable/baseline_build_24"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/edit_entry_button_color"
+            app:cornerRadius="10sp" />
+
+    </FrameLayout>
+
+</RelativeLayout>
